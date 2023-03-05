@@ -1,0 +1,213 @@
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+body {
+    font-family: 'League Spartan', sans-serif;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+.card .card-container {
+    width: 60%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+.card .card-container .details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+.card .card-container .details .text h1 {
+    width: 450px;
+    font-size: 3.5rem;
+    color: var(--Very-Dark-Magenta);
+} 
+.card .card-container .details .text p {
+    font-size: 1.2rem;
+    width: 450px;
+    line-height: 1.6;
+    color: var(--Very-Dark-Magenta);
+    opacity: .8;
+} 
+.card .card-container .details .rating {
+    margin-top: 4rem;
+}
+.card .card-container .details .rating div:nth-child(2) {
+    margin-left: 60px;
+}
+.card .card-container .details .rating div:nth-child(3) {
+    margin-left: 100px;
+}
+.card .card-container .details .rating div {
+    margin: 1rem;
+    width: 400px;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: .5rem;
+    display: flex;
+}
+.card .card-container .details .rating div .image {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin: 0 auto;
+}
+.card .card-container .details .rating div .image img {
+    width: 17px;
+    height: 16px;
+}
+.card .card-container .details .rating div p {
+    color: var(--Very-Dark-Magenta);
+    padding-right: 50px;
+}
+.card .card-container .people {
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    margin-top: -150px;
+}
+.card .card-container .people div {
+    height: fit-content;
+    width: 275px;
+    background-color: var(--Very-Dark-Magenta);
+    color: var(--White);
+    border-radius: .5rem;
+}
+.card .card-container .people div .content-container {
+    padding: 1rem 2rem 2rem;
+}
+.card .card-container .people > div:nth-child(2) {
+    margin-top: 20px;
+}
+.card .card-container .people > div:nth-child(3) {
+    margin-top: 30px;
+}
+.card .card-container .people div .content-container .image {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 20px;
+    margin: 10px 0 15px;
+}
+.card .card-container .people div .content-container .image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: -5px;
+}
+.card .card-container .people div .content-container .image .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.card .card-container .people div .content-container .image .text p {
+    margin: 0;
+}
+.card .card-container .people div .content-container .image .text p:last-of-type {
+    opacity: .6;
+    color: var(--Soft-Pink);
+    font-weight: 600;
+}
+.card .card-container .people > div .content-container > p {
+    margin: 0;
+    width: 276px;
+    line-height: 1.6;
+}
+@media (max-width: 450px) {
+    body {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        padding: 3rem;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    .card .card-container {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    .card .card-container .details {
+        display: flex;
+        flex-direction: column;
+    }
+    .card .card-container .details .rating {
+        margin-top: 0;
+    }
+    .card .card-container .details .text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .card .card-container .details .text h1 {
+        font-size: 3rem;
+        width: 350px;
+        margin: 0 auto;
+    }
+    .card .card-container .details .text p {
+        width: 340px;
+        margin: 2rem auto;
+    }
+    .card .card-container .details .rating {
+        display: flex;
+        flex-direction: column;
+    }
+    .card .card-container .details .rating div {
+        width: 300px;
+        padding: 5px;
+        margin: 15px auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 3px;
+    }
+    .card .card-container .details .rating div .image {
+        display: flex;
+        flex-direction: row;
+    }
+    .card .card-container .details .rating div p {
+        font-weight: 800;
+        margin: 0;
+        padding: 0;
+    }
+    .card .card-container .details .rating div:nth-child(2) {
+        margin-left: auto;
+    }
+    .card .card-container .details .rating div:nth-child(3) {
+        margin-left: auto;
+    }
+    .card .card-container .people {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .card .card-container .people div {
+        width: 100%;
+    }
+    .card .card-container .people > div:nth-child(2) {
+        margin-top: 0;
+    }
+    .card .card-container .people > div:nth-child(3) {
+        margin-top: 0;
+    }
+    .card .card-container .people div .content-container {
+        width: 80%;
+    }
+}
