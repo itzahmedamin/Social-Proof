@@ -157,6 +157,7 @@ body {
     .card .card-container .details {
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
     .card .card-container .details .rating {
         margin-top: 0;
